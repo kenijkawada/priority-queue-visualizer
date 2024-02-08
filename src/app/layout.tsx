@@ -5,13 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://priority-queue-visualizer.vercel.app/"),
   title: "priority queue visualizer",
   description: "Visualize priority queue algorithms",
   openGraph: {
     title: "Priority Queue Visualizer",
     description: "Freelance software developer based in Japan",
-    url: "http://localhost:3000",
+    url: "https://priority-queue-visualizer.vercel.app/",
     siteName: "Priority Queue Visualizer",
     locale: "ja_JP",
     type: "website",
