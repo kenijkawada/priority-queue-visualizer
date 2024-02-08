@@ -5,8 +5,17 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: "priority queue visualizer",
   description: "Visualize priority queue algorithms",
+  openGraph: {
+    title: "Priority Queue Visualizer",
+    description: "Freelance software developer based in Japan",
+    url: "http://localhost:3000",
+    siteName: "Priority Queue Visualizer",
+    locale: "ja_JP",
+    type: "website",
+  },
   robots: {
     index: true,
     follow: true,
@@ -30,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className={inter.className}>{children}</body>
     </html>
   );
